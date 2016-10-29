@@ -1,23 +1,32 @@
 <?xml version="1.0"?>
 <run>
     <tool>
-        <about>Press Simulate to view results.</about>
-        <command>@tool/../bin/a.out @driver</command>
+        <title>Minus</title>
+        <about>Subtract two values</about>
+        <command>@tool/mainc @driver</command>
     </tool>
     <input>
-        <number id="one">
+        <integer id="value1">
             <about>
-                <label>First Value</label>
-                <description>Main value</description>
+                <label>Value 1</label>
+                <description>First value in equation</description>
             </about>
             <default>7</default>
-        </number>
-        <number id="two">
+        </integer>
+        <integer id="value2">
             <about>
-                <label>Second Value</label>
-                <description>Value to subtract from the first.</description>
+                <label>Value 2</label>
+                <description>Second value in equation</description>
             </about>
             <default>3</default>
-        </number>
+        </integer>
     </input>
+    <output>
+        <integer id="value3">
+            <about>
+                <label>Result</label>
+                <description>result of subtraction</description>
+            </about>
+        </integer>
+    </output>
 </run>
